@@ -3,6 +3,24 @@
 A Chrome (Manifest V3) extension that scans marketplace pages for Pokémon cards
 and shows the **live PokePulse market value** inline on each listing.
 
+## 🧪 For testers — install in 2 minutes
+
+1. **Download the zip:** [latest release →](https://github.com/mrilanduk/pulse-price-scanner/releases/latest)
+   (grab `pulse-price-scanner.zip`).
+2. **Unzip** it to a folder (the folder must contain `manifest.json` at its top level).
+3. Open **`chrome://extensions`** → turn on **Developer mode** (top-right) →
+   **Load unpacked** → select the unzipped folder.
+4. Click the blue ⚡ icon → **enter your access code** → Unlock.
+   (No code? Ask Pulse Collective for one.)
+5. Browse **eBay / Vinted / Facebook Marketplace** — price badges appear as you scroll.
+
+Notes: keep the unzipped folder where it is (Chrome loads it live). To update to a
+newer release, download the new zip, replace the folder contents, and hit **↻ Reload**
+on the extension card.
+
+---
+
+
 It does **not** call PokePulse directly. It talks to your own
 [`pokemon-price-checker`](../pokemon-price-checker) service, which holds the
 partner API keys server-side, caches prices for 6h, and resolves set/number
